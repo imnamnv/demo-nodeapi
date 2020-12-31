@@ -1,5 +1,10 @@
 let express = require('express');
 let app = express();
+const cors = require('cors');
+app.use(cors());
+app.options('*', cors());
+
+
 let port = process.env.PORT || 3000;
 
 app.listen(port);
