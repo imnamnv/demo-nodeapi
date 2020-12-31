@@ -5,7 +5,7 @@ module.exports ={
 
     },
     checkUser:(req,res)=>{
-        if(req.query.user == 'nam'){
+        if(req.body.user == 'nam'){
             res.json({"status":"ok"});
         }else{
             res.json({"status":"can not login"});
